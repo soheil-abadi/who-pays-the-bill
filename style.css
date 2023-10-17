@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/water-bill-1300x800.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.main-div{
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transition: .5s;
+    width: 400px;
+    overflow: hidden;
+    background: rgba(212, 212, 212, 0.5);
+    padding: 50px;
+}
+.start-btn{
+   
+    display:  inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px ;
+    padding: 10px 0px;
+}
+.main-div input {
+    width: 80%;
+    padding: 10px 5px;
+}
+.main-div button:nth-of-type(2) {
+    width: 15%;
+    padding: 10px 0px;
+}
+.main-div ul{
+    padding: 0px;
+}
+
+.main-div li{
+    list-style-type: none;
+    background: rgba(101, 91, 255, 0.9);
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    color: rgb(255, 255, 255);
+    margin: 5px 0px;
+   
+    border-radius: 10px;
+}
+.warn{
+    overflow: hidden;
+}
+
+.warning{
+   
+   background-color: rgb(139, 58, 58);
+   border-radius: 10px;
+   color: white;
+    display: none;
+    padding: 20px 0px;
+    text-align: center;
+}
+.random-name{
+    visibility: hidden;
+    
+margin: 0px;
+  position: absolute;
+    transform: translate(-50% ,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    background: rgba(253, 253, 253, 0.9);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: gray;
+
+}
