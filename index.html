@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>who paying bills</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 
 
 
 </head>
 
-<body>
-    <div class="main-div">
-        <button class="start-btn">start</button>
-        <input id="nameValue" type="text" placeholder="please insert your name" maxlength="10" required   >
-        <button class="add">add</button>
+<body >
+    <div class="main-div lg:w-4/12 xl:w-7/12 mx-auto mt-8 p-4">
+        <button class="start-btn bg-blue-400 rounded-lg ">start</button>
+        <input id="nameValue" class="rounded-lg " type="text" placeholder="please insert your name" maxlength="10" required   >
+        <button class="add bg-blue-400 rounded-lg w-full">add</button>
         <div class="warn">
-            <p class="warning">please insert your names properly without space</p>
+            <p class="warning bg-red-600 mt-3 mb-3 p-5  rounded-lg text-stone-200">please insert your names properly without space</p>
         </div>
         <ul class="names">
 
         </ul>
     </div>
-    <p class="random-name"></p>
+    <p class="random-name "></p>
     <script src="app.js"></script>
 
 </body>
