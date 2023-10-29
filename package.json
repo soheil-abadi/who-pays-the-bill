@@ -10,6 +10,7 @@
     "author": "soheil",
     "license": "ISC",
     "devDependencies": {
+        "prettier": "3.0.3",
         "tailwindcss": "^3.3.5"
     }
 }
