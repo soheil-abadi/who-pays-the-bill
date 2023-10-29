@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -10,24 +10,24 @@ body{
     width: 100%;
 }
 
-.main-div{
+.main-div {
     position: absolute;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    transition: .5s;
+    transition: 0.5s;
     width: 400px;
     overflow: hidden;
     background: rgba(212, 212, 212, 0.5);
     padding: 50px;
 }
-.start-btn{
-   
-    display:  inline-block;
+
+.start-btn {
+    display: inline-block;
     text-align: center;
     width: 100%;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
     padding: 10px 0px;
 }
 .main-div input {
@@ -35,14 +35,17 @@ body{
     padding: 10px 5px;
 }
 .main-div button:nth-of-type(2) {
-    width: 15%;
+    width: 19%;
     padding: 10px 0px;
 }
-.main-div ul{
+.main-div ul {
     padding: 0px;
+    height: 200px;
+    overflow: auto;
 }
 
-.main-div li{
+.main-div li {
+    cursor: pointer;
     list-style-type: none;
     background: rgba(101, 91, 255, 0.9);
     text-align: center;
@@ -50,24 +53,24 @@ body{
     padding: 10px 0px;
     color: rgb(255, 255, 255);
     margin: 5px 0px;
-   
+
     border-radius: 10px;
 }
-.warn{
+.warn {
     overflow: hidden;
 }
 
-.warning{
+.warning {
     display: none;
     padding: 20px 0px;
     text-align: center;
 }
-.random-name{
+.random-name {
     visibility: hidden;
-    
-margin: 0px;
-  position: absolute;
-    transform: translate(-50% ,-50%);
+
+    margin: 0px;
+    position: absolute;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     font-size: 100px;
@@ -75,5 +78,25 @@ margin: 0px;
     padding: 10px 20px;
     border-radius: 10px;
     color: gray;
+}
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a95f7;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #ddd;
 }
