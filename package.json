@@ -1,16 +1,19 @@
 {
-    "name": "bill",
-    "version": "1.0.0",
-    "description": "\"Who Pays The Bill\" is a fun, light-hearted application designed to randomly select a person from a list of names to settle the bill. This project is built with JavaScript, and provides an interactive and straightforward user interface to add names and initiate the selection process. Whether you're out with friends or settling a friendly wager, let \"Who Pays The Bill\" add a spin to the occasion!",
-    "main": "app.js",
-    "scripts": {
-        "test": " npx tailwindcss -i ./project/input.css -o ./style2.css -w"
-    },
-    "keywords": [],
-    "author": "soheil",
-    "license": "ISC",
-    "devDependencies": {
-        "prettier": "3.0.3",
-        "tailwindcss": "^3.3.5"
-    }
+     "name": "bill",
+     "version": "1.0.0",
+     "description": "\"Who Pays The Bill\" is a fun, light-hearted application designed to randomly select a person from a list of names to settle the bill. This project is built with JavaScript, and provides an interactive and straightforward user interface to add names and initiate the selection process. Whether you're out with friends or settling a friendly wager, let \"Who Pays The Bill\" add a spin to the occasion!",
+     "main": "app.js",
+     "scripts": {
+          "test": " npx tailwindcss -i ./project/input.css -o ./style2.css -w",
+          "lint": "npx eslint app.js"
+     },
+     "keywords": [],
+     "author": "soheil",
+     "license": "ISC",
+     "devDependencies": {
+          "eslint": "^8.52.0",
+          "eslint-plugin-prettier": "^5.0.1",
+          "prettier": "3.0.3",
+          "tailwindcss": "^3.3.5"
+     }
 }

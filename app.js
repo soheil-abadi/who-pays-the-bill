@@ -26,7 +26,6 @@ const addPersonToList = () => {
 };
 
 $.addEventListener("DOMContentLoaded", () => {
-     let body = document.querySelector("body");
      let mainSection = document.querySelector(".main-div");
      let startBtn = document.querySelector(".start-btn");
      let addtBtn = $.querySelector(".add");
