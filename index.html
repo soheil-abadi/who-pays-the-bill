@@ -1,38 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>who paying bills</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="style2.css" />
-    </head>
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>who paying bills</title>
+          <link rel="stylesheet" href="style.css" />
+          <link rel="stylesheet" href="style2.css" />
+     </head>
 
-    <body>
-        <div class="main-div lg:w-4/12 xl:w-7/12 mx-auto mt-8 p-4 p-52">
-            <button class="start-btn bg-blue-400 rounded-lg">Start</button>
-            <input
-                id="person-name-input"
-                class="rounded-lg"
-                type="text"
-                placeholder="Please insert your name"
-                maxlength="10"
-                required
-            />
-            <button type="submit" class="add bg-blue-400 rounded-lg w-full">
-                Add
-            </button>
-            <div class="warn">
-                <p
-                    class="warning bg-black mt-3 mb-3 p-5 rounded-lg text-stone-200"
-                >
-                    Please insert your names properly without space
-                </p>
-            </div>
+     <body>
+          <div class="main-div">
+               <form>
+                    <button
+                         class="start-btn bg-blue-400 rounded-lg"
+                         type="button"
+                    >
+                         Start
+                    </button>
+                    <input
+                         id="person-name-input"
+                         class="rounded-lg"
+                         type="text"
+                         placeholder="Please insert your name"
+                         maxlength="10"
+                         required
+                    />
+                    <button
+                         class="add bg-blue-400 rounded-lg w-full"
+                         type="submit"
+                    >
+                         Add
+                    </button>
+               </form>
+               <div class="warn">
+                    <p
+                         class="warning bg-black mt-3 mb-3 p-5 rounded-lg text-stone-200"
+                    >
+                         Please insert your names properly without space
+                    </p>
+               </div>
 
-            <ul class="names overflow-auto mt-3"></ul>
-        </div>
-        <p class="random-name"></p>
-        <script src="app.js"></script>
-    </body>
+               <ul class="names overflow-auto mt-3"></ul>
+          </div>
+          <p class="random-name"></p>
+          <script src="app.js"></script>
+     </body>
 </html>

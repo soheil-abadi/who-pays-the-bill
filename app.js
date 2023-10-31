@@ -1,6 +1,7 @@
 const $ = document;
 let random = [];
-const addPersonToList = () => {
+const addPersonToList = (event) => {
+     event.preventDefault();
      let warning = $.querySelector(".warning");
      let names = $.querySelector(".names");
      let personNameInput = $.querySelector("#person-name-input");
@@ -9,13 +10,12 @@ const addPersonToList = () => {
      if (!personName || personName.length < 3) {
           warning.style.display = "block";
      } else {
-          let combine = document.createElement("li");
+          let combine = $.createElement("li");
           combine.innerHTML = personName;
           let hi = names.appendChild(combine);
           personNameInput.value = "";
           warning.style.display = "none";
           random.push(hi);
-
           personNameInput.focus();
           combine.addEventListener("click", () => {
                const index = random.indexOf(hi);
@@ -26,8 +26,8 @@ const addPersonToList = () => {
 };
 
 $.addEventListener("DOMContentLoaded", () => {
-     let mainSection = document.querySelector(".main-div");
-     let startBtn = document.querySelector(".start-btn");
+     let mainSection = $.querySelector(".main-div");
+     let startBtn = $.querySelector(".start-btn");
      let addtBtn = $.querySelector(".add");
      let personNameInput = $.querySelector("#person-name-input");
      let ran = $.querySelector(".random-name");
@@ -35,12 +35,6 @@ $.addEventListener("DOMContentLoaded", () => {
           personNameInput.focus();
      };
      focus();
-
-     personNameInput.addEventListener("keydown", (e) => {
-          if (e.keyCode === 13) {
-               addPersonToList();
-          }
-     });
 
      addtBtn.addEventListener("click", addPersonToList);
      startBtn.addEventListener("click", () => {
