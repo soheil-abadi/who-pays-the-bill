@@ -10,17 +10,18 @@ const addPersonToList = (event) => {
      if (!personName || personName.length < 3) {
           warning.style.display = "block";
      } else {
-          let combine = $.createElement("li");
-          combine.innerHTML = personName;
-          let hi = names.appendChild(combine);
+          let creatLiPerson = $.createElement("li");
+          creatLiPerson.innerHTML = personName;
+          let personLiinput = names.appendChild(creatLiPerson);
           personNameInput.value = "";
           warning.style.display = "none";
-          random.push(hi);
+          random.push(personLiinput);
           personNameInput.focus();
-          combine.addEventListener("click", () => {
-               const index = random.indexOf(hi);
+          creatLiPerson.setAttribute("data-id", random.length - 1);
+          creatLiPerson.addEventListener("click", (e) => {
+               const index = e.target.dataset.id;
                random.splice(index, 1);
-               combine.remove();
+               creatLiPerson.remove();
           });
      }
 };
