@@ -1,20 +1,20 @@
 body {
-     margin: 0px;
+     margin: 0;
      display: flex;
      justify-content: center;
      align-items: center;
      background-image: url(img/water-bill-1300x800.jpg);
      background-size: cover;
      background-repeat: no-repeat;
-     height: 100%;
+     height: 100vh;
      width: 100%;
 }
 
 .main-div {
-     position: absolute;
-     transform: translate(-50%, -50%);
-     top: 50%;
-     left: 50%;
+     display: grid;
+     grid-template-rows: auto auto;
+     grid-template-columns: 1;
+     gap: 1rem;
      border-radius: 10px;
      transition: 0.5s;
      width: 80%;
@@ -24,20 +24,31 @@ body {
 }
 
 .start-btn {
+     grid-column: 1 / -1;
      display: inline-block;
      text-align: center;
      width: 100%;
      margin-bottom: 10px;
-     padding: 10px 0px;
+     padding: 10px 0;
 }
+
+.main-div form {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     gap: 1rem;
+}
+
 .main-div input {
-     width: 80%;
      padding: 10px 5px;
+     width: 100%;
+     box-sizing: border-box;
 }
+
 .main-div button:nth-of-type(2) {
-     width: 19%;
-     padding: 10px 0px;
+     padding: 10px 0;
+     width: 100%;
 }
+
 .main-div ul {
      overflow: auto;
      height: 100px;
@@ -49,25 +60,25 @@ body {
      background: rgba(101, 91, 255, 0.9);
      text-align: center;
      width: 100%;
-     padding: 10px 0px;
+     padding: 10px 0;
      color: rgb(255, 255, 255);
-     margin: 5px 0px;
-
+     margin: 5px 0;
      border-radius: 10px;
 }
+
 .warn {
      overflow: hidden;
 }
 
 .warning {
      display: none;
-     padding: 20px 0px;
+     padding: 20px 0;
      text-align: center;
 }
+
 .random-name {
      visibility: hidden;
-
-     margin: 0px;
+     margin: 0;
      position: absolute;
      transform: translate(-50%, -50%);
      top: 50%;
